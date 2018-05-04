@@ -41,3 +41,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/package-lock.json
+/src/psd/
+/src/assets/scripts/
+/src/assets/video/
+/src/app/config/

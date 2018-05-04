@@ -1,0 +1,77 @@
+{
+    "caseList":
+[
+    {
+        "id": 1002011,
+        "name": "Велокейс CC-L green",
+        "price": 245,
+        "img": "/assets/cases/bike-case-1002011-L.png"
+    },
+    {
+        "id": 1002012,
+        "name": "Велокейс CC-M green",
+        "price": 245,
+        "img": "/assets/cases/bike-case-1002012-M.png"
+    },
+    {
+        "id": 1002013,
+        "name": "Велокейс CC-S green",
+        "price": 245,
+        "img": "/assets/cases/bike-case-1002013-S.png"
+    },
+    {
+        "id": 1002014,
+        "name": "Велокейс CC-L reflective tape",
+        "price": 255,
+        "img": "/assets/cases/bike-case-1002014-L.png"
+    },
+    {
+        "id": 1002015,
+        "name": "Велокейс CC-M reflective tape",
+        "price": 255,
+        "img": "/assets/cases/bike-case-1002015-M.png"
+    },
+    {
+        "id": 1002016,
+        "name": "Велокейс CC-S reflective tape",
+        "price": 255,
+        "img": "/assets/cases/bike-case-1002016-S.png"  
+    },
+    {
+        "id": 1002017,
+        "name": "Велокейс CC-L tiger",
+        "price": 280,
+        "img": "/assets/cases/bike-case-1002017-L.png"
+    },
+    {
+        "id": 1002018,
+        "name": "Велокейс CC-M tiger",
+        "price": 280,
+        "img": "/assets/cases/bike-case-1002018-M.png"
+    },
+    {
+        "id": 1002019,
+        "name": "Велокейс CC-S tiger",
+        "price": 280,
+        "img": "/assets/cases/bike-case-1002019-S.png"
+    },
+    {
+        "id": 1002020,
+        "name": "Велокейс CC-L flame",
+        "price": 295,
+        "img": "/assets/cases/bike-case-1002020-L.png"
+    },
+    {
+        "id": 1002021,
+        "name": "Велокейс CC-M flame",
+        "price": 295,
+        "img": "/assets/cases/bike-case-1002021-M.png"
+    },
+    {
+        "id": 1002022,
+        "name": "Велокейс CC-S flame",
+        "price": 295,
+        "img": "/assets/cases/bike-case-1002022-S.png"
+    }
+]
+}

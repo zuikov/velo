@@ -1,0 +1,22 @@
+.modal-header, .modal-body, .modal-footer{
+  font-family: 'Roboto', sans-serif;
+  font-size:1em;
+}
+
+.modal-body {
+    text-align: justify;
+}
+
+.btn-outline-primary{
+  font-family: Roboto-Black;
+}
+
+.alert{
+  margin-top: 10px;
+}
+
+#dispatchMessage{
+  position: absolute;
+  z-index: 999;
+  margin: 0 10%;
+}

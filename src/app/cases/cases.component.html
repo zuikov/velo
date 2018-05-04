@@ -1,0 +1,80 @@
+<div class="parallax">
+
+  <div id="group2" class="parallax__group">
+
+    <div class="parallax__layer parallax__layer--fore">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container">
+          <h2>Велокейсы представлены в размерах S, M и L.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--back">
+      <div class="jumbotron jumbotron-fluid" id="first-page">
+        <div class="container" id="description">
+          <p>
+            <br>
+            <br> Размеры велокейсов приблизительно соответствуют ростовкам велосипедных рам. Соответствие приблизительное, потому
+            что существует огромное количество различных вариантов геометрии рамы, поэтому при выборе велокейса лучше руководствоваться
+            приведенными здесь на странице размерами.
+            <br>Для велокейса размера L длина по верхней трубе составляет 330мм и длина по подседельной трубе составляет 320мм.
+            <br>Для велокейса размера M длина по верхней трубе составляет 300мм и длина по подседельной трубе составляет 290мм.
+            <br>Для велокейса размера L длина по верхней трубе составляет 270мм и длина по подседельной трубе составляет 260мм.
+            <br>При правильно выбранном размере конструкция велокейса позволяет при его установке произвести точную подгонку
+            под геометрию вашего байка.
+            <br>Велокейс reflective tape (арт. 1002014-1002016) оборудован красными световозвращающими элементами.
+            <br>
+            <br> В комплекте с велокейсами идут четыре самоклеющиеся ZIP-застежки, они пристегнуты в точках крепления кейса.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="group3" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="row" id="devices">
+          <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let case of cases" id="case-wrapper">
+            <div class="thumbnail" id="wing-item">
+              <div class="item-title">
+                <h4>{{case.name}}</h4>
+              </div>
+              <a href={{case.img}} target="_blank" class="text-dark">
+                <img src={{case.img}} alt="wing for bike" style="width:100%">
+              </a>
+              <p>Артикул: {{case.id}}</p>
+              <p>{{case.price}} грн</p>
+              <button class="good-item__btn-add btn btn-info btn-sm" (click)='setGood(case.id, case.name, case.price)'>
+                <i class="fa fa-cart-plus"></i> в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--deep">
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container" id="last-page">
+          <h2>Боковины кейсов сделаны открывающимися для удобства загрузки</h2>
+          <div class="row">
+            <div class="col-md-2" *ngFor="let photo of photos">
+              <div class="thumbnail thumbnail-rounded">
+                <a href={{photo.url}} target="_blank" class="text-dark">
+                  <img id="photo" src={{photo.url}} alt="Turnstiles Skif in Baku" style="width:100%">
+                  <div class="caption">
+                    <p class="text-muted" id="photo-description">{{photo.description}}</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a routerLink="../instructions"> Видеоинструкции</a> по установке велокейсов можно увидеть нажав соответсвующую вкладу в меню.
+        </div>
+      </div>
+      <img class="center-img" src="/assets/images/night-city.png" alt="Chania">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<div class="parallax">
+
+  <div id="group2" class="parallax__group">
+    <div class="parallax__layer parallax__layer--fore">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container">
+          <a href="hystory.html" target="_self" title="История компании Smart Cycle Systems, видеоинструкции, новости">
+            <img src="/assets/logo/smart-cycle-systems-logotype2.png" alt="компания SMART CYCLE SYSTEMS - велоаксессуары" id="logo">
+          </a>
+          <h1 id="company">SMART CYCLE SYSTEMS</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--back">
+      <div class="jumbotron jumbotron-fluid" id="first-page">
+        <div class="container" id="description">
+          <div class="about">
+            <br>
+            <br>
+            <br>
+            <h1>Универсальные
+              <br> сверхлегкие
+              <br>
+              <span>крылья
+                <br>и</span>
+              <br>
+              <span class="dual-color">велокейсы</span>
+            </h1>
+            <p>Быстросъемные пластиковые брызговики, приносящие Вам пользу в любую погоду
+            </p>
+            <p>Велосипедные кейсы, заменяющие рюкзак в поездках по городу и однодневных велопоходах
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="group3" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container" id="second-page">
+          <h1>В чем преимущества нашего решения?</h1>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                Заднее крыло обычно крепится к подседельному штырю при помощи быстросъемного фиксатора. Это позволяет снимать или устанавливать
+                его по мере необходимости. Но что делать, если перед поездкой неизвестно, будет дождь или нет? Частенько
+                однажды установив крылья, райдеры их уже больше не снимают. При этом крылья как правило не сочетаются с внешним
+                видом велосипеда, за редким исключением. Существуют складные задние крылья, которые в хорошую погоду перевозятся
+                на велосипеде в свернутом или сложенном виде, не принося при этом никакой пользы.
+                <br> Конструкция нашего крыла позволяет использовать его и как полноразмерный задний брызговик, и переставлять
+                его на переднюю часть рамы для защиты велосипеда и райдера от летящих из под переднего колеса камней и песка.
+                <br>При этои перестановка крыла занимает считанные секунды, крыло надежно фиксируется и практически незаметно
+                при взгляде сбоку, т.е. не портит первоначальный дизайн байка)
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2" *ngFor="let photo of photos">
+              <div class="thumbnail thumbnail-rounded">
+                <a href={{photo.url}} target="_blank" class="text-dark">
+                  <img id="photo" src={{photo.url}} alt="Turnstiles Skif in Baku" style="width:100%">
+                  <div class="caption">
+                    <p>{{photo.description}}</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <p>Установленные на байке крыло и кейс показаны на слайд-шоу ниже:</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10">
+              <ngb-carousel *ngIf="slides">
+                <ng-template ngbSlide *ngFor="let slide of slides">
+                  <img src={{slide.url}} alt={{slide.alt}}>
+                  <div class="carousel-caption">
+                    <h3>{{slide.title}}</h3>
+                    <p>{{slide.description}}</p>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--deep">
+      <div class="jumbotron jumbotron-fluid bg-dark" >
+        <div class="container" id="last-page">
+          <h2>Перестановка крыла занимает 3 секунды</h2>
+          <div class="thumbnail thumbnail-rounded" id="left-img">
+            <a href="/assets/images/sunset-road-bikes-with-SCS-accessories.jpg" target="_blank" class="text-dark">
+              <img src="/assets/images/sunset-road-bikes-with-SCS-accessories.jpg" alt="Two variannts of wing position" style="width:100%">
+            </a>
+          </div>
+          Крыло снимается с заднего колеса велосипеда, расположенного слева и переставляется на раму велосипеда, расположенного справа.
+          <br>
+          <a routerLink="../instructions"> Видеоинструкции</a> по установке крыльев и велокейсов можно увидеть нажав соответсвующую вкладу в меню.
+        </div>
+      </div>
+      <img class="center-img" src="/assets/images/night-sity-and-bike.png" alt="night city">
+    </div>
+  </div>
+</div>

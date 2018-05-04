@@ -1,0 +1,79 @@
+<div class="parallax">
+
+  <div id="group2" class="parallax__group">
+    <div class="parallax__layer parallax__layer--fore">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container">
+          <p>Все крылья MTB26, MTB29 и Road28 можно устанавливать как сзади для защиты от грязи с заднего колеса, так и спереди
+            на нижнюю трубу переднего треугольника рамы.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--back">
+      <div class="jumbotron jumbotron-fluid" id="first-page">
+        <div class="container" id="description">
+          <p>
+            <br>Крыло MTB26 имеет длину 550мм и ширину узкой концевой части 85мм,
+            <br>крыло MTB29 имеет длину 600мм и ширину узкой концевой части 85мм,
+            <br>крыло Road28 имеет длину 570мм и ширину узкой концевой части 60мм.
+            <br>Каждое из крыльев может быть переставлено на любую из установленных на велосипеде точек крепления.
+            <br>
+            <br>При выборе крыла пожалуйста руководствовуйтесь приведенными на странице размерами, так как каждый велосипед имеет
+            свои особенности геометрии рамы.
+            <br> В комплекте с крылом идут самоклеющиеся ZIP-застежки в количестве трех штук, они пристегнуты в точках крепления
+            крыла с внутренней стороны.
+            <br>
+            <br> Соответствие цветов материала крыльев каталогу RAL следующее:
+            <br> зеленый цвет - близок к RAL 6032
+            <br> синий цвет - приблизительно RAL 5005
+            <br> красный цвет - близок к RAL 3020
+            <br> желтый цвет - практически совпадает с RAL 1016
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="group3" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="row" id="devices">
+          <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let wing of wings" id="wing-wrapper">
+            <div class="thumbnail" id="wing-item">
+              <div class="item-title">
+                <h4>{{wing.name}}</h4>
+              </div>
+              <a href={{wing.img}} target="_blank" class="text-dark">
+                <img src={{wing.img}} alt="wing for bike" style="width:100%">
+              </a>
+              <p>Артикул: {{wing.id}}</p>
+              <p>{{wing.price}} грн</p>
+              <button class="good-item__btn-add btn btn-info btn-sm" (click)='setGood(wing.id, wing.name, wing.price)'>
+                <i class="fa fa-cart-plus"></i> в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__layer parallax__layer--deep">
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container" id="last-page">
+          <h2>Крыло хорошо дополняется велокейсом</h2>
+          <p>
+            Байк с установленным крылом и велокейсом показан на фото ниже.
+          </p>
+          <div class="thumbnail thumbnail-rounded" id="left-img">
+            <a href="/assets/images/bike-with-plastic-case.jpg" target="_blank" class="text-dark">
+              <img src="/assets/images/bike-with-plastic-case.jpg" alt="Bike with plastic case" style="width:100%">
+            </a>
+          </div>
+          <br>
+          <a routerLink="../instructions"> Видеоинструкции</a> по установке крыльев можно увидеть нажав соответсвующую вкладу в меню.
+        </div>
+      </div>
+      <img class="center-img" src="/assets/images/night-city.png" alt="Chania">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,151 @@
+{
+    "wingList":
+    [
+    {
+        "id": 1001011,
+        "name": "Крыло MTB26 green",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001011MTB26.png"
+    },
+    {
+        "id": 1001012,
+        "name": "Крыло MTB29 green",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001012MTB29.png"
+    },
+    {
+        "id": 1001013,
+        "name": "Крыло Road28 green",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001013Road.png"
+    },
+    {
+        "id": 1001014,
+        "name": "Крыло MTB26 blue",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001014MTB26.png"
+    },
+    {
+        "id": 1001015,
+        "name": "Крыло MTB29 blue",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001015MTB29.png"
+    },
+    {
+        "id": 1001016,
+        "name": "Крыло Road28 blue",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001016Road.png"
+    },
+    {
+        "id": 1001017,
+        "name": "Крыло MTB26 red",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001017MTB26.png"
+    },
+    {
+        "id": 1001018,
+        "name": "Крыло MTB29 red",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001018MTB29.png"
+    },
+    {
+        "id": 1001019,
+        "name": "Крыло Road28  red",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001019Road.png"   
+    },
+    {
+        "id": 1001020,
+        "name": "Крыло MTB26 yellow",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001020MTB26.png"
+    },
+    {
+        "id": 1001021,
+        "name": "Крыло MTB29 yellow",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001021MTB29.png"
+    },
+    {
+        "id": 1001022,
+        "name": "Крыло Road28 yellow",
+        "price": 145,
+        "img": "/assets/wings/bike-wing-1001022Road.png"
+    },
+    {
+        "id": 1001035,
+        "name": "Крыло MTB26 Earth",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001035MTB26.png"
+    },
+    {
+        "id": 1001036,
+        "name": "Крыло MTB29 Earth",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001036MTB29.png"
+    },
+    {
+        "id": 1001037,
+        "name": "Крыло Road28 Earth",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001037Road.png"
+    },
+    {
+        "id": 1001038,
+        "name": "Крыло MTB26 flame",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001038MTB26.png"
+    },
+    {
+        "id": 1001039,
+        "name": "Крыло MTB29 flame",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001039MTB29.png"
+    },
+    {
+        "id": 1001040,
+        "name": "Крыло Road28 flame",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001040Road.png"
+    },
+    {
+        "id": 1001041,
+        "name": "Крыло MTB26 leaves",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001041MTB26.png"
+    },
+    {
+        "id": 1001042,
+        "name": "Крыло MTB29 leaves",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001042MTB29.png"
+    },
+    {
+        "id": 1001043,
+        "name": "Крыло Road28 leaves",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001043Road.png"
+    },
+    {
+        "id": 1001044,
+        "name": "Крыло MTB26 tiger",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001044MTB26.png"
+    },
+    {
+        "id": 1001045,
+        "name": "Крыло MTB29 tiger",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001045MTB29.png"
+    },
+    {
+        "id": 1001046,
+        "name": "Крыло Road28 tiger",
+        "price": 175,
+        "img": "/assets/wings/bike-wing-1001046Road.png"
+    }
+]
+
+}
+

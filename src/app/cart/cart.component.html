@@ -1,0 +1,62 @@
+<div class="parallax">
+
+        <div id="group2" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
+            <div class="container">
+              <div class="jumbotron  bg-dark">
+            
+                <table class="table table-bordered table-striped table-sm">
+                  <thead>
+                    <tr>
+                      <th>Артикул</th>
+                      <th>Название</th>
+                      <th>Цена</th>
+                      <th>Количество</th>
+                      <th>Сумма</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let good of goods">
+                      <td>{{ good.id }}</td>
+                      <td>{{ good.name }}</td>
+                      <td>{{ good.price }}</td>
+                      <td>
+                        <span title="Уменьшить на 1"  (click)="decrement(good.id)"><i class="fa fa-minus"></i></span>
+                        <span class="js-count">{{ good.quantity }}</span>
+                        <span title="Увеличить на 1"  (click)="increment(good.id)"><i class="fa fa-plus"></i></span>
+                      </td>
+            
+                      <td>
+                        <span class="js-summa">
+                          {{ good.sum }}
+                        </span> грн.</td>
+                      <td>
+                          <span title="Удалить из корзины" (click)="deleteGoodItem(good.id)"><i class="fa fa-times"></i></span>
+                      </td>
+            
+                    </tr>
+                  </tbody>
+                </table>
+            
+            
+                <div>Итого:
+                  <span id="total-cart-summa">{{ total }}</span> грн.</div>
+                <br />
+                <ngbd-modal-basic></ngbd-modal-basic>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
