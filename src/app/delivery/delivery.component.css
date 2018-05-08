@@ -103,23 +103,20 @@
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: rgb(58, 63, 58);
+    background: rgb(20, 105, 161);
   }
 
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
   }
   #group2 .parallax__layer--back {
-    background: rgb(58, 63, 57);
+    background: rgb(20, 105, 161);
   }
 
   #group3 {
     z-index: 4; /* slide over group 2 and 4 */
   }
-  #group3 .parallax__layer--base {
-    /* background: rgb(65, 77, 56); */
-  }
-
+  
   #group4 {
     z-index: 2; /* slide under group 3 and 5 */
   }

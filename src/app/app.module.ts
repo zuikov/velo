@@ -18,7 +18,6 @@ import { WingsComponent } from './wings/wings.component';
 import { CasesComponent } from './cases/cases.component';
 import { CartComponent } from './cart/cart.component';
 import { DeliveryComponent } from './delivery/delivery.component';
-import { AboutComponent } from './about/about.component';
 import { ConfigComponent } from './config/config.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { InformationComponent } from './information/information.component';
@@ -50,7 +49,6 @@ const appRoutes: Routes = [
     CasesComponent,
     CartComponent,
     DeliveryComponent,
-    AboutComponent,
     ConfigComponent,
     InstructionsComponent,
     InformationComponent
