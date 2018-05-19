@@ -2,7 +2,7 @@
 
   <div id="group2" class="parallax__group">
     <div class="parallax__layer parallax__layer--fore">
-      <div class="jumbotron jumbotron-fluid bg-secondary">
+      <div class="jumbotron jumbotron-fluid bg-secondary" id="title">
         <div class="container">
           <p>Все крылья MTB26, MTB29 и Road28 можно устанавливать как сзади для защиты от грязи с заднего колеса, так и спереди
             на нижнюю трубу переднего треугольника рамы.</p>
@@ -38,9 +38,9 @@
   <div id="group3" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="jumbotron jumbotron-fluid bg-secondary">
-        <div class="row" id="devices">
-          <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let wing of wings" id="wing-wrapper">
-            <div class="thumbnail" id="wing-item">
+        <div class="good-items row">
+          <div class="good-item-wrapper col-xl-1 col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let wing of wings">
+            <div class="good-item-card thumbnail">
               <div class="item-title">
                 <h4>{{wing.name}}</h4>
               </div>
