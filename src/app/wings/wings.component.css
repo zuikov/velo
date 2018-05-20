@@ -115,7 +115,7 @@ bottom: 0;
 -webkit-transform: translateZ(90px) scale(.7);
 transform: translateZ(90px) scale(.7);
 z-index: 1;
-right: -0.25em;
+right: -3px;
 }
 
 .parallax__layer--base {
@@ -128,7 +128,7 @@ z-index: 4;
 margin-top: 100px;
 -webkit-transform: translateZ(-300px) scale(2);
 transform: translateZ(-300px) scale(2);
-left: -0.25em;
+left: -3px;
 z-index: 3;
 }
 
@@ -156,6 +156,9 @@ z-index: 4;
 }
 
 @media screen and (max-width: 1200px) {
+.parallax__layer--fore {
+    right: -2px;
+}
 #last-page{
   padding-top: 800px;
 }

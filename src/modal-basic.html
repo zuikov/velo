@@ -17,7 +17,7 @@
                      [(ngModel)]="user.name" #name="ngModel" required pattern="^[a-z0-9_-]{3,16}$"/>
         
                     <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
-                        Не указано имя
+                        Некорректное имя
                     </div>
                 </div>
             </div>
