@@ -1,3 +1,4 @@
+// import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { GoodItem } from '../goodItem';
@@ -7,6 +8,8 @@ export class CartService {
 
   constructor() { }
 
+  // searchEvent: EventEmitter = new EventEmitter();
+
   // Observable string sources
   private cartCountChangeSource = new Subject<string>();
   // Observable string streams
@@ -14,16 +17,6 @@ export class CartService {
   // Service message commands
   announceCartCount(change: string) {
     this.cartCountChangeSource.next(change);
-  }
-
-
-  // Observable string sources
-  private clearCartSource = new Subject<string>();
-  // Observable string streams
-  clearCart$ = this.clearCartSource.asObservable();
-  // Service message commands
-  announceclearCart(change: string) {
-    this.clearCartSource.next(change);
   }
 
   countGoodItem(id) {
@@ -37,6 +30,8 @@ export class CartService {
     let serialGoodItem = JSON.stringify(currentItem);
     localStorage.setItem(id, serialGoodItem);
     this.incrementTotalGoodsCount();
+    // console.log('currentItem', currentItem);
+    // console.log('serialGoodItem', serialGoodItem);
   }
 
   incrementTotalGoodsCount(){

@@ -11,8 +11,8 @@ export class HttpService {
     return this.http.get(path)
   }
 
-  postData(path, data){
-    const body = {data};
+  postData(path, user: User){
+    const body = {user};
     return this.http.post(path, body); 
   }
 

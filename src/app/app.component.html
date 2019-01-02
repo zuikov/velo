@@ -3,24 +3,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+ 
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    
+    <!-- <a class="navbar-brand" href="#">
+      <img src="../assets/logo/smart-cycle-systems-logotype.png" alt="logo" style="width:40px;">
+    </a> -->
     <div ngbDropdown placement="bottom-left" class="d-inline-block">  
         <button class="navbar-toggler" type="button" data-toggle="collapse"
          data-target="#collapsibleNavbar" id="dropdownBasic2" ngbDropdownToggle>
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="bg-info">
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="bg-light">
           <button class="dropdown-item" routerLink="./intro" routerLinkActive="active"><i class="fa fa-bicycle"></i> Как использовать</button>
           <button class="dropdown-item" routerLink="./wings" routerLinkActive="active">Крылья</button>
           <button class="dropdown-item" routerLink="./cases" routerLinkActive="active">Велокейсы</button>
           <button class="dropdown-item" routerLink="./delivery" routerLinkActive="active">Доставка</button>
+          <!-- <i class="fa fa-truck"></i>  -->
           <button class="dropdown-item" routerLink="./instructions" routerLinkActive="active">Видеоинструкции</button>
+          <!-- <i class="fa fa-play"></i>  -->
           <button class="dropdown-item" routerLink="./information" routerLinkActive="active">Информация</button>
+          <!-- <i class="fa fa-info"></i>  -->
           <button class="dropdown-item" routerLink="./cart" routerLinkActive="active"><i class="fa fa-shopping-cart"></i> Корзина
             <span class="badge badge-success">{{totalGoodsCount}}</span></button>
         </div>
@@ -28,6 +38,9 @@
 
  <div class="collapse navbar-collapse   justify-content-center" id="collapsibleNavbar">  
     <ul class="navbar-nav">
+      <!-- <li class="nav-item">
+          <ngbd-modal-basic></ngbd-modal-basic>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" routerLink="./intro" routerLinkActive="active">Как использовать</a>
       </li>
@@ -48,16 +61,19 @@
       </li>
       <li class="nav-item">
           <a class="nav-link" routerLink="./cart" routerLinkActive="active"><i class="fa fa-shopping-cart"></i> Корзина
-          <span class="badge badge-success">{{totalGoodsCount}}</span></a>
+            <span class="badge badge-success">{{totalGoodsCount}}</span></a>
+          
       </li>
+      
     </ul>
   </div> 
-  <div *ngIf="cartMessage" class="alert alert-success">
-    {{ cartMessage }}
-  </div>
+
   </nav>
 
+  <!-- <div>{{totalGoodsCount}}</div>  -->
+  <!-- <app-cart (cartChanged)="cartChanged($event)"></app-cart> -->
 <router-outlet></router-outlet>
+
 
 <footer class="container-fluid text-center bg-dark fixed-bottom" id="footer">
     <p class="text-success">
@@ -65,6 +81,7 @@
         <a href="mailto:smartcycle@ukr.net">smartcycle@ukr.net </a>
          +38 (095) 43-49-537,  +38 (068) 30-85-534
     </p>
+       
   </footer>
   
 </body>

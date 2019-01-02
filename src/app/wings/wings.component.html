@@ -1,8 +1,9 @@
 <div class="parallax">
 
   <div id="group2" class="parallax__group">
+
     <div class="parallax__layer parallax__layer--fore">
-      <div class="jumbotron jumbotron-fluid bg-secondary" id="title">
+      <div class="jumbotron jumbotron-fluid bg-secondary">
         <div class="container">
           <p>Все крылья MTB26, MTB29 и Road28 можно устанавливать как сзади для защиты от грязи с заднего колеса, так и спереди
             на нижнюю трубу переднего треугольника рамы.</p>
@@ -38,42 +39,49 @@
   <div id="group3" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="jumbotron jumbotron-fluid bg-secondary">
-        <div class="good-items row">
-          <div class="good-item-wrapper col-xl-1 col-lg-2 col-md-3 col-sm-4 col-6" *ngFor="let wing of wings">
-            <div class="good-item-card thumbnail">
+        <div class="row" id="devices">
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6" *ngFor="let wing of wings" id="wing-wrapper">
+            <div class="thumbnail" id="wing-item">
               <div class="item-title">
-                <h4>{{wing.name}}</h4>
+                  <h4>{{wing.name}}</h4>
               </div>
               <a href={{wing.img}} target="_blank" class="text-dark">
                 <img src={{wing.img}} alt="wing for bike" style="width:100%">
               </a>
               <p>Артикул: {{wing.id}}</p>
               <p>{{wing.price}} грн</p>
-              <button class="good-item__btn-add btn btn-info btn-sm" (click)='setGood(wing.id, wing.name, wing.price)'>
+              <button class="good-item__btn-add btn btn-info btn-sm js-add-to-cart" (click)='setGood(wing.id, wing.name, wing.price)'>
                 <i class="fa fa-cart-plus"></i> в корзину</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+  
     <div class="parallax__layer parallax__layer--deep">
       <div class="jumbotron jumbotron-fluid bg-dark">
-        <div class="container" id="last-page">
-          <h2>Крыло хорошо дополняется велокейсом</h2>
-          <p>
-            Байк с установленным крылом и велокейсом показан на фото ниже.
-          </p>
-          <div class="thumbnail thumbnail-rounded" id="left-img">
-            <a href="/assets/images/bike-with-plastic-case.jpg" target="_blank" class="text-dark">
-              <img src="/assets/images/bike-with-plastic-case.jpg" alt="Bike with plastic case" style="width:100%">
-            </a>
-          </div>
-          <br>
-          <a routerLink="../instructions"> Видеоинструкции</a> по установке крыльев можно увидеть нажав соответсвующую вкладу в меню.
-        </div>
+
+          <div class="container" id="last-page">
+              <h2>Крыло хорошо дополняется велокейсом</h2>
+              <p>
+                Байк с установленным крылом и велокейсом показан на фото ниже.
+              </p> 
+  
+              
+  
+             
+              
+              
+              <div class="thumbnail thumbnail-rounded" id="left-img">
+                <a href="/assets/images/bike-with-plastic-case.jpg" target="_blank" class="text-dark">
+                  <img src="/assets/images/bike-with-plastic-case.jpg" alt="Bike with plastic case" style="width:100%">
+                </a>
+            </div>
+            <br> <a routerLink="../instructions"> Видеоинструкции</a> по установке крыльев можно увидеть нажав соответсвующую вкладу в меню.
+            </div>
+        
       </div>
       <img class="center-img" src="/assets/images/night-city.png" alt="Chania">
     </div>
   </div>
-</div>
+  </div>

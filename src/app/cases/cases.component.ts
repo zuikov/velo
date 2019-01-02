@@ -19,7 +19,7 @@ class Photo {
 })
 export class CasesComponent implements OnInit {
   photos = PHOTOS;
-  cases: GoodItem[] = [];
+  cases: GoodItem[] =[];
 
   constructor(private httpService: HttpService, private cartService: CartService) { }
 
@@ -60,5 +60,5 @@ export const PHOTOS: Photo[] = [
     url: '/assets/images/case-for-bike-SCS-right.jpg',
     description: 'велокейс - вид сзади'
   }
-];
+]
 

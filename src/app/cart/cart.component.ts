@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../http.service';
+
+import { HttpService} from '../http.service';
 import { CartService } from './cart.service';
-import { GoodItem } from '../goodItem';
+
+import {GoodItem} from '../goodItem';
 
 @Component({
   selector: 'app-cart',
@@ -12,14 +14,8 @@ import { GoodItem } from '../goodItem';
 export class CartComponent implements OnInit {
   goods = [];
   total: number = 0;
-
-  constructor(private httpService: HttpService, private cartService: CartService) {
-    cartService.clearCart$.subscribe(
-      clearCart => {
-        this.clearCart();
-      }
-    );
-  }
+  
+  constructor(private httpService: HttpService, private cartService: CartService) { }
 
   increment(id) {
     let currentGoodItem = JSON.parse(localStorage.getItem(id));
@@ -33,10 +29,10 @@ export class CartComponent implements OnInit {
 
   decrement(id) {
     let currentGoodItem = JSON.parse(localStorage.getItem(id));
-    if (currentGoodItem.quantity > 0) currentGoodItem.quantity -= 1;
+    if(currentGoodItem.quantity > 0) currentGoodItem.quantity -= 1;
     let serialGoodItem = JSON.stringify(currentGoodItem);
     localStorage.setItem(id, serialGoodItem);
-    if (currentGoodItem.quantity === 0) localStorage.removeItem(id);
+    if(currentGoodItem.quantity === 0) this.deleteGoodItem(id);
     this.goods = [];
     this.total = 0;
     this.renderCart();
@@ -54,7 +50,7 @@ export class CartComponent implements OnInit {
     let totalGoodsCount = 0;
     for (let i = 0; i < length; i++) {
       let id = localStorage.key(i);
-      if (parseInt(id.substring(0, 3), 10) === 100) {
+      if(parseInt(id.substring(0, 3), 10) === 100) {
         let currentGoodItem = JSON.parse(localStorage.getItem(id));
         currentGoodItem.sum = currentGoodItem.price * currentGoodItem.quantity;
         this.total += currentGoodItem.sum;
@@ -63,26 +59,12 @@ export class CartComponent implements OnInit {
       }
     }
     localStorage.setItem("totalGoodsCount", totalGoodsCount.toString());
-    this.cartService.announceCartCount("");
-  }
-
-  clearCart() {
-    for (let i = 0; i < localStorage.length; i++) {
-      let id = localStorage.key(i);
-      if (parseInt(id.substring(0, 3), 10) === 100) {
-        localStorage.removeItem(id);
-        i -= 1;
-      }
-    }
-    this.total = 0;
-    this.goods = [];
-    localStorage.setItem("totalGoodsCount", '0');
-    this.cartService.announceCartCount("Товары из корзины перемещены в заказ");
+    this.cartService.announceCartCount("товар добавлен в корзину");
   }
 
   ngOnInit() {
     this.renderCart();
-  }
+    }
 
-}
+  }
 

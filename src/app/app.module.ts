@@ -7,9 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // import the NgbModule coming from Ng-bootstra1
 import { NgbdModalBasic } from '../modal-basic';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
 import { CartService } from './cart/cart.service';
+
+
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -18,6 +21,7 @@ import { WingsComponent } from './wings/wings.component';
 import { CasesComponent } from './cases/cases.component';
 import { CartComponent } from './cart/cart.component';
 import { DeliveryComponent } from './delivery/delivery.component';
+import { AboutComponent } from './about/about.component';
 import { ConfigComponent } from './config/config.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { InformationComponent } from './information/information.component';
@@ -28,6 +32,7 @@ const appRoutes: Routes = [
   {
     path: 'cases',
     component: CasesComponent
+    // data: { title: 'FriendlyNumbers base' }
   },
   { path: 'delivery', component: DeliveryComponent },
   { path: 'instructions', component: InstructionsComponent },
@@ -38,6 +43,7 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   { path: '**', redirectTo: '/' }
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -49,12 +55,18 @@ const appRoutes: Routes = [
     CasesComponent,
     CartComponent,
     DeliveryComponent,
+    AboutComponent,
     ConfigComponent,
     InstructionsComponent,
     InformationComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, { useHash: true }),
+    // RouterModule.forRoot(
+    //   appRoutes,
+    //   // <-- debugging purposes only
+    //   { enableTracing: true } 
+    // ),
     BrowserModule,
     // import HttpClientModule after BrowserModule.
     HttpClientModule,

@@ -2,27 +2,31 @@ import { Component } from '@angular/core';
 import { Subscription }   from 'rxjs/Subscription';
 import { CartService } from './cart/cart.service';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+  // providers: [CartService]
 })
 export class AppComponent {
   title = 'app';
   ie: number;
   totalGoodsCount: string;
-  cartMessage: string;
 
   constructor(private cartService: CartService) {
     cartService.cartCountChange$.subscribe(
-      cartEvent => {
+      totalGoodsCount => {
         this.totalGoodsCount = JSON.parse(localStorage.getItem("totalGoodsCount"));
-        this.cartMessage = cartEvent;
-        setTimeout(() => this.cartMessage = null, 1000);
-      }
-    );
+    }
+  );
   }
+
+  //   cartService.changeEmitted$.subscribe(
+  //     text => {
+  //         console.log(text);
+  //     }
+  //   );
+  //  }
 
   ngOnInit() {
     if (navigator.userAgent.indexOf('MSIE') != -1) this.ie = 1;
