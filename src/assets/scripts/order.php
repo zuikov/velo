@@ -43,9 +43,9 @@ function getData($conn) {
         'phone' => getParam('phone', $conn),
         'address' => getParam('address', $conn),
         'message' => getParam('message', $conn),
-        'delivery_type' => getParam('delivery_type', $conn),
-        'delivery_summa' => getParam('delivery_summa', $conn),
-        'full_summa' => getParam('full_summa', $conn),
+        // 'delivery_type' => getParam('delivery_type', $conn),
+        // 'delivery_summa' => getParam('delivery_summa', $conn),
+        // 'full_summa' => getParam('full_summa', $conn),
         'cart' => isset($_POST['cart']) ? stripslashes($_POST['cart']) : '[]'
     );
 }
